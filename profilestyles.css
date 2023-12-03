@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    background-image: url(https://img.freepik.com/free-photo/gray-wall-textures-background_74190-4389.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+
+}
+
+.container {
+    background-color: none;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 550px;
+    transition: 0.2s;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.upper-container {
+    height: 200px;
+    width: 430px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJrvtC5QNwuf4D1sJ_QTVHXPSgn50fguWmg&usqp=CAU);
+    background-size: cover;
+}
+
+.pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -80px auto -30px auto;
+    border: 4px solid rgb(255, 255, 255);
+    transition: 0.5s;
+
+}
+
+.pic img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.pic:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+
+.body {
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: -75px;
+    line-height: 1.8rem;
+}
+
+.body .name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: baseline;
+    margin-top: 45px;
+
+}
+
+.socials .insta-logo .github-logo .linkedin-logo .spotify-logo {
+    transition: 1s;
+    background-color: blue;
+}
+
+.insta-logo img,
+.github-logo img,
+.linkedin-logo img,
+.spotify-logo img {
+    height: 35px;
+    width: 35px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.name {
+    font-size: 1.4rem;
+    color: black;
+}
+
+
+.description {
+    font-size: 1.0rem;
+    font-family: Trebuchet MS;
+    padding-top: 30px;
+
+}
+
+
+
+.socials div:hover {
+    transition: 1s;
+    scale: 1.5;
+}
