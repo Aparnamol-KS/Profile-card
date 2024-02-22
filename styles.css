@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -14,28 +13,31 @@ body {
 }
 
 .main {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    padding: 100px;
-
+    flex-direction:column;
+    
+    
 
 }
 
 .container {
     background-color: none;
+    width: 450px;
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
     height: 550px;
     transition: 0.2s;
-    box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .upper-container {
-    height: 200px;
-    width: 430px;
+    height:200px;
+    width: 100%;
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJrvtC5QNwuf4D1sJ_QTVHXPSgn50fguWmg&usqp=CAU);
     background-size: cover;
 }
@@ -47,7 +49,6 @@ body {
     overflow: hidden;
     margin: -80px auto -30px auto;
     border: 4px solid rgb(255, 255, 255);
-    transition: 0.5s;
 
 }
 
@@ -55,6 +56,7 @@ body {
     display: block;
     height: auto;
     width: 100%;
+    
 }
 
 .pic:hover {
@@ -85,12 +87,14 @@ body {
     padding-right: 70px;
     align-items: baseline;
     margin-top: 45px;
+    
 
 }
 
 .socials .insta-logo .github-logo .linkedin-logo .spotify-logo {
     transition: 1s;
     background-color: blue;
+    
 }
 
 .insta-logo img,
@@ -99,6 +103,8 @@ body {
 .spotify-logo img {
     height: 35px;
     width: 35px;
+    animation-direction: reverse;
+    animation: identifier 0.1s linear infinite ;
 }
 
 ::-webkit-scrollbar {
@@ -123,4 +129,10 @@ body {
 .socials div:hover {
     transition: 1s;
     scale: 1.5;
+}
+.header{
+    text-align: center;
+    padding:30px;
+    font-size: 20px;
+    width: 100%;
 }
